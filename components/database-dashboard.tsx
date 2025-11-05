@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import { DataViewer } from "./data-viewer"
 
 interface TableStats {
   name: string
@@ -114,9 +115,10 @@ export function DatabaseDashboard() {
       )}
 
       <Tabs defaultValue="overview" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="overview">Visão Geral</TabsTrigger>
           <TabsTrigger value="structure">Estrutura</TabsTrigger>
+          <TabsTrigger value="dados">Dados</TabsTrigger>
           <TabsTrigger value="setup">Configuração</TabsTrigger>
         </TabsList>
 
@@ -199,6 +201,10 @@ export function DatabaseDashboard() {
               </div>
             </CardContent>
           </Card>
+        </TabsContent>
+
+        <TabsContent value="dados" className="space-y-6">
+          <DataViewer />
         </TabsContent>
 
         <TabsContent value="setup" className="space-y-6">
