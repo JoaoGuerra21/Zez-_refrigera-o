@@ -38,9 +38,11 @@ export default function FerramentasPage() {
       const supabase = getSupabaseClient()
 
       if (!supabase) {
-        console.error("Supabase client not initialized")
+        console.error("[v0] Supabase client not initialized - check environment variables")
         return
       }
+
+      console.log("[v0] Fetching tools from Supabase...")
 
       const { data: toolsData, error: toolsError } = await supabase
         .from("produtos")
@@ -49,6 +51,8 @@ export default function FerramentasPage() {
         .eq("ativo", true)
 
       if (toolsError) throw toolsError
+
+      console.log("[v0] Tools fetched:", toolsData?.length)
 
       const { data: stockData, error: stockError } = await supabase
         .from("estoque")
@@ -68,7 +72,7 @@ export default function FerramentasPage() {
       setTools(toolsData || [])
       setEstoque(stockMap)
     } catch (error) {
-      console.error("Erro ao buscar ferramentas:", error)
+      console.error("[v0] Erro ao buscar ferramentas:", error)
     } finally {
       setLoading(false)
     }
