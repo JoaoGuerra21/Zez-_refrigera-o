@@ -20,9 +20,6 @@ export function NavHeader() {
             <Link href="/" className="hover:text-blue-100 transition">
               Início
             </Link>
-            <Link href="/dashboard" className="hover:text-blue-100 transition">
-              Dashboard
-            </Link>
             <Link href="/dados" className="hover:text-blue-100 transition">
               Dados
             </Link>
@@ -40,9 +37,6 @@ export function NavHeader() {
           <nav className="md:hidden pb-4 space-y-2">
             <Link href="/" className="block py-2 hover:text-blue-100 transition">
               Início
-            </Link>
-            <Link href="/dashboard" className="block py-2 hover:text-blue-100 transition">
-              Dashboard
             </Link>
             <Link href="/dados" className="block py-2 hover:text-blue-100 transition">
               Dados

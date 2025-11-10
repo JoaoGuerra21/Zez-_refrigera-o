@@ -20,13 +20,8 @@ export default function Home() {
                 Organize seu negócio, reduza custos e aumente a eficiência com nossa plataforma completa.
               </p>
               <div className="flex gap-4">
-                <Link href="/dashboard">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    Acessar Dashboard
-                  </Button>
-                </Link>
                 <Link href="/dados">
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                     Ver Dados
                   </Button>
                 </Link>
@@ -143,10 +138,10 @@ export default function Home() {
         <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">Pronto para começar?</h2>
-            <p className="text-xl mb-8 opacity-90">Acesse o dashboard e comece a gerenciar seu estoque agora mesmo.</p>
-            <Link href="/dashboard">
+            <p className="text-xl mb-8 opacity-90">Acesse seus dados e comece a gerenciar seu estoque agora mesmo.</p>
+            <Link href="/dados">
               <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                Ir para o Dashboard
+                Ir para os Dados
               </Button>
             </Link>
           </div>
