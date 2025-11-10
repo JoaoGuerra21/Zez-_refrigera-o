@@ -23,6 +23,9 @@ export function NavHeader() {
             <Link href="/dados" className="hover:text-blue-100 transition">
               Dados
             </Link>
+            <Link href="/ferramentas" className="hover:text-blue-100 transition">
+              Ferramentas
+            </Link>
             <Link href="/sobre" className="hover:text-blue-100 transition">
               Sobre
             </Link>
@@ -40,6 +43,9 @@ export function NavHeader() {
             </Link>
             <Link href="/dados" className="block py-2 hover:text-blue-100 transition">
               Dados
+            </Link>
+            <Link href="/ferramentas" className="block py-2 hover:text-blue-100 transition">
+              Ferramentas
             </Link>
             <Link href="/sobre" className="block py-2 hover:text-blue-100 transition">
               Sobre

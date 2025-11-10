@@ -92,6 +92,16 @@ export default function Home() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="pt-6 text-center">
                   <div className="text-5xl mb-4">🔧</div>
+                  <h3 className="text-xl font-bold mb-2">Ferramentas</h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Gerencie seu estoque de ferramentas com preços, estoque e análise de rotatividade.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6 text-center">
+                  <div className="text-5xl mb-4">🔧</div>
                   <h3 className="text-xl font-bold mb-2">Fácil de Usar</h3>
                   <p className="text-gray-600 dark:text-gray-400">
                     Interface intuitiva que qualquer pessoa consegue usar sem treinamento.
